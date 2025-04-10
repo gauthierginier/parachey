@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plantes",
+  "info": {
+    "singularName": "plante",
+    "pluralName": "plantes",
+    "displayName": "plante"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "toxic": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "photo_upload": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "scientific_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "appelations": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "attributes": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
